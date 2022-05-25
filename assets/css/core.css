@@ -1,0 +1,41 @@
+:root{
+    --primary-color: #033244;
+    --secondary-color: #00AEEF;
+    --subtitle-color: #E2F7FF;
+}
+
+@font-face {
+    font-family: "Archer";
+    src: url("../fonts/ArcherBook/ArcherBook.otf");
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    font-family: "Archer",sans-serif;
+}
+body{
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: #000
+}
+.icon{
+    display: flex;
+    align-self: center;
+    color: var(--secondary-color);
+    border: none;
+}
+.button{
+    border: none;
+    background-color: #fff;
+    padding: 0px 16px;
+}
+
+@media (min-width:720px) {
+    body{
+    }
+}
