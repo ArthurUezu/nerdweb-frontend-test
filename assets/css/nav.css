@@ -1,15 +1,103 @@
 nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 0 5%;
     height: 70px;
-    width: 100%;
+    width: 90%;
     border-top: 2px solid var(--secondary-color);
     background-color: var(--primary-color);
-    position: fixed;
+    position: sticky;
+    top: 0;
+    font-size: 21px;
 }
 
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul a, nav ul button{
+    color: var(--primary-light-color);
+
+}
+nav .dropdown-list li a {
+    color: var(--primary-dark-color);
+}
+
+nav form{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 20%;
+    min-width: 164px;
+}
+
+nav form button{
+    font-size: 20px;
+    padding: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+nav form button i{
+    color: var(--primary-light-color);
+
+}
+nav form input{
+    width: 100%;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+    color: var(--primary-light-color);
+    padding: 5px;
+    font-size: 1rem;
+}
 
 @media (min-width:720px){
-    header{
-        padding: 0 9%;
+    .nav.dropdown-list{
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        visibility: visible;
+        opacity: 1;
+        transition: none;
+        transform: none;
+        padding-left: 1rem;
+        font-size: 1rem ;
+        line-height: 21px;
+    }
+    .nav.dropdown-list li a{
+        color: var(--primary-light-color);
+    }
+    .dropdown:hover .nav.dropdown-list {
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        transform: none;
+        transition: none;
+        width: 100%;
+        visibility: visible;
+        box-shadow: none;
+        padding: 0 0 0 1rem;
+        opacity: 1;
+        z-index: 1;
+    }
+    .nav.dropdown-list li{
+        display: flex;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width:900px){
+    .nav.dropdown-list li{
+        display: flex;
+        padding-right: 0.7rem;
+    }
+    .nav.dropdown-list li a{
+        font-size: 0.78rem;
+    }
+    .nav.dropdown-list{
+        padding: 0;
     }
 }

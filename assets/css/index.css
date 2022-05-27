@@ -1,0 +1,29 @@
+main{
+    width: 100%;
+}
+
+section{
+    
+}
+
+section#main-banner a{
+    position: relative;
+}
+section#main-banner img{
+    object-fit: cover;
+    max-width: 100%;
+    min-height: 350px;
+    height: auto;
+    margin: 0 auto;
+}
+
+@media (min-width:720px){
+    section#main-banner img{
+        object-fit: cover;
+        max-width: 100%;
+        min-height: 450px;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+}
