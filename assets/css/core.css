@@ -1,6 +1,6 @@
 :root{
-    --primary-color: #033244;
-    --secondary-color: #00AEEF;
+    --primary-color: #00AEEF;
+    --secondary-color: #033244;
     --subtitle-color: #E2F7FF;
     --primary-light-color: #fff;
     --secondary-light-color: #2C3A2F;
@@ -9,10 +9,20 @@
 
 @font-face {
     font-family: "Archer";
-    src: url("../fonts/ArcherBook/ArcherBook.otf");
+    src: url("../fonts/ArcherBook.otf");
     font-display: swap;
 }
 
+@font-face {
+    font-family: "Archer Bold";
+    src: url("../fonts/ArcherBold.otf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("../fonts/RobotoSlabBold.ttf");
+    font-display: swap;
+}
 *{
     margin: 0;
     padding: 0;
@@ -27,21 +37,40 @@ ul{
     list-style: none;
 }
 
+h1,h2,h3,h4,h5,strong{
+    font-family: "Roboto Bold";
+    font-weight: bolder;
+}
+
 a{
     text-decoration: none;
     color: #000
 }
 
+strong{
+    color: var(--primary-color);
+}
+
 .icon{
     display: flex;
     align-self: center;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     border: none;
 }
 .button{
     border: none;
     background-color: transparent;
     padding: 0px 16px;
+}
+
+.primary-button{
+    margin: 0 auto;
+    font-size: 0.7rem;
+    font-weight: bolder;
+    padding: 0.35rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--primary-dark-color);
+    border: none;
 }
 
 .dropdown {
@@ -57,7 +86,7 @@ a{
     left: 0;
     width: 0;
     transform: translateY(-2em);
-    z-index: 0;
+    z-index: 1;
     transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 }
 

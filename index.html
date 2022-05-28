@@ -4,20 +4,19 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
         <script src="https://kit.fontawesome.com/349d46b761.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="assets/css/core.css">
         <link rel="stylesheet" href="assets/css/header.css">
         <link rel="stylesheet" href="assets/css/nav.css">
         <link rel="stylesheet" href="assets/css/index.css">
-
-
         <title>Nerdweb</title>
     </head>
     <body>
         <header>
             <ul>
                 <li>
-                    <a id="logo" href="#" ><img src="./assets/images/logo.png" alt=""></a>
+                    <a title="Nerdweb" id="logo" href="#" ><img src="./assets/images/logo.png" alt=""></a>
                 </li>
                 <li>
                     <div class="dropdown">
@@ -94,7 +93,7 @@
             </ul>
             <form id="search">
                 <input placeholder="Digite sua pesquisa" type="text" name="" id="">
-                <button class="icon">
+                <button type="submit" class="icon">
                     <i class="fas fa-search"></i>
                 </button>
             </form>
@@ -102,9 +101,54 @@
         <main>
             <section id="main-banner">
                 <a href="">
-                    <img src="./assets/images/banner.png" alt="">
+                    <h1>NERDWEB</h1>
+                    <img title="Nerdweb" src="./assets/images/banner.png" alt="">
                 </a>
             </section>
+            <section id="discover">
+                <div id="discover-text">
+                    <h2>Descubra os serviços Nerdweb <br><strong>que mais combinam com sua empresa</strong></h2>
+                    <button class="primary-button">VER SERVIÇOS</button>
+                </div>
+                <div id="discover-bracket">
+                    
+                </div>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">Slide 1</div>
+                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div>
+                      ...
+                    </div>
+                  
+                  
+                  </div>
+            </section>
         </main>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+          // Optional parameters
+          direction: 'horizontal',
+          loop: true,
+      
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+      
+          // And if we need scrollbar
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+        });
+    </script>
     </body>
 </html>
