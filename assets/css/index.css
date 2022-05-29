@@ -62,7 +62,7 @@ section#discover .swiper-slide .slide-card h3{
 
 section#know{
     width: 86%;
-    padding: 0 7%;
+    margin: 70px 7% 0 7%;
     text-align: center;
     margin-top: 70px;
 }
@@ -203,6 +203,37 @@ section#certificates #certificates-img{
     justify-content: space-evenly;
     align-items: center;        
 }
+section#newsletter{
+    width: 66%;
+    margin: 70px 7% 0 7%;
+    padding: 10% 10%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-grey);
+}
+section#newsletter strong{
+    font-size: 20px;
+    line-height: 20px;
+}
+section#newsletter #newsletter-form {
+    text-align: left;
+}
+section#newsletter #newsletter-form form{
+    display: flex;
+    flex-direction: column;
+}
+section#newsletter #newsletter-form form input{
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: 4px 10%;
+    height: 40px;
+    margin-top: 15px;
+}
+section#newsletter #newsletter-form form button{
+    display: flex;
+    width: fit-content;
+    margin: 15px 0 0 0;
+}
 @media (min-width:769px){
     section#main-banner img{
         object-fit: cover;
@@ -213,17 +244,13 @@ section#certificates #certificates-img{
         z-index: -3;
     }
     section#discover{
-        width: 70%;
-        padding: 0 15%;
+        
         flex-direction: row;
     }
     section#discover #discover-text h2{
         width: 24vw;
     }
-    section#know{
-        width: 70%;
-        padding: 0 15%;
-    }
+
     section#be-part>div,section#about>div{
         width: 40%;
         padding: 5% 0 5% 10%;
@@ -253,6 +280,15 @@ section#certificates #certificates-img{
         padding-left: 10%;
     }
     section#certificates #certificates-img{
+        width: 50%;
+    }
+    section#newsletter{
+        flex-direction: row;
+    }
+    section#newsletter #newsletter-title{
+        width: 50%;
+    }
+    section#newsletter #newsletter-form{
         width: 50%;
     }
 }

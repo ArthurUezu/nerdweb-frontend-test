@@ -35,7 +35,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: none;
     font-family: "Archer",sans-serif;
     scrollbar-color: var(--secondary-color);
 }
