@@ -1,0 +1,6 @@
+footer{
+    border-top: 3px solid var(--primary-color);
+    width: 100%;
+    background-color: var(--secondary-color);
+    padding: 7%;
+}
