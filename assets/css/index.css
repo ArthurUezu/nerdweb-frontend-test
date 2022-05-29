@@ -26,8 +26,8 @@ section#discover{
     display: flex;
     flex-direction: column;
     margin-top: 70px;
-    width: 80%;
-    padding: 0 10%;
+    width: 86%;
+    padding: 0 7%;
 }
 
 section#discover #discover-text{
@@ -61,8 +61,8 @@ section#discover .swiper-slide .slide-card h3{
 }
 
 section#know{
-    width: 80%;
-    padding: 0 10%;
+    width: 86%;
+    padding: 0 7%;
     text-align: center;
     margin-top: 70px;
 }
@@ -88,8 +88,8 @@ section#know .swiper .swiper-slide h3{
 }
 
 section#be-part{
-    width: 80%;
-    margin: 70px 10% 0 10%;
+    width: 86%;
+    margin: 70px 7% 0 7%;
     height: 400px;
     background-image: url("../images/section3.png");
     background-position: center;
@@ -109,8 +109,8 @@ section#be-part>div p{
     margin-bottom: 15px;
 }
 section#services{
-    width: 80%;
-    margin: 70px 10% 0 10%;
+    width: 86%;
+    margin: 70px 7% 0 7%;
     text-align: center;
 }
 section#services h3 strong{
@@ -156,6 +156,32 @@ section#services #services-container a{
     font-family: "Roboto Bold";
     color: var(--primary-color);
 }
+section#about{
+    width: 86%;
+    margin: 70px 7% 0 7%;
+    height: 400px;
+    background-image: url("../images/about.png");
+    background-position: center;
+    background-size: cover;
+}
+section#about>div{
+    width: 80%;
+    padding: 5% 0 5% 10%;
+}
+section#about>div h2{
+    margin-bottom: 12px;
+    font-size: 32px;
+    color: var(--primary-light-color);
+}
+section#about>div p{
+    font-family: "Roboto Bold";
+    color: var(--primary-color);
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+section#about>div a{
+    color: var(--primary-light-color);
+}
 @media (min-width:769px){
     section#main-banner img{
         object-fit: cover;
@@ -177,14 +203,14 @@ section#services #services-container a{
         width: 70%;
         padding: 0 15%;
     }
-    section#be-part>div{
+    section#be-part>div,section#about>div{
         width: 40%;
         padding: 5% 0 5% 10%;
     }
-    section#be-part>div h2{
+    section#be-part>div h2,section#about>div h2{
         margin-bottom: 22px;
     }
-    section#be-part>div p{
+    section#be-part>div p,section#about>div strong{
         margin-bottom: 40px;
     }
     section#services #services-container{
@@ -193,5 +219,9 @@ section#services #services-container a{
     }
     section#services #services-container .service-card{
         width: 32%;
+    }
+    section#about>div p{
+        font-size: 20px;
+        margin-bottom: 40px;
     }
 }
