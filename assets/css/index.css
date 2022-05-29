@@ -88,7 +88,6 @@ section#know .swiper .swiper-slide h3{
 }
 
 section#be-part{
-    margin-top: 70px;
     width: 80%;
     margin: 70px 10% 0 10%;
     height: 400px;
@@ -109,7 +108,55 @@ section#be-part>div p{
     color: var(--secondary-color);
     margin-bottom: 15px;
 }
-@media (min-width:720px){
+section#services{
+    width: 80%;
+    margin: 70px 10% 0 10%;
+    text-align: center;
+}
+section#services h3 strong{
+    font-size: 20px;
+}
+
+section#services #services-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px auto;
+}
+section#services #services-container .service-card{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-height: 424px;
+    max-width: 424px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+section#services #services-container .service-card img{
+    max-height: 212px;
+    max-width: 100%;
+    object-fit: cover;
+}
+section#services #services-container .service-text{
+    padding: 24px 24px 0 24px;
+    color: var(--primary-light-color);
+    text-align: left;
+}
+section#services #services-container .service-text h4{
+    font-size: 20px;
+}
+section#services #services-container .service-text p{
+    font-family: "Roboto Light";
+    font-size: 16px;
+}
+section#services #services-container a{
+    margin: 24px 24px;
+    text-align: left;
+    font-family: "Roboto Bold";
+    color: var(--primary-color);
+}
+@media (min-width:769px){
     section#main-banner img{
         object-fit: cover;
         max-width: 100%;
@@ -139,5 +186,12 @@ section#be-part>div p{
     }
     section#be-part>div p{
         margin-bottom: 40px;
+    }
+    section#services #services-container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    section#services #services-container .service-card{
+        width: 32%;
     }
 }

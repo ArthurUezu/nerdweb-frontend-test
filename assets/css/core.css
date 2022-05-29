@@ -27,6 +27,11 @@
     src: url("../fonts/RobotoSlabBold.ttf");
     font-display: swap;
 }
+@font-face {
+    font-family: "Roboto Light";
+    src: url("../fonts/RobotoSlabLight.ttf");
+    font-display: swap;
+}
 *{
     margin: 0;
     padding: 0;
