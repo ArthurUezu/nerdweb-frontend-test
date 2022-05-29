@@ -5,11 +5,12 @@ nav{
     padding: 0 5%;
     height: 70px;
     width: 90%;
-    border-top: 2px solid var(--secondary-color);
-    background-color: var(--primary-color);
+    border-top: 2px solid var(--primary-color);
+    background-color: var(--secondary-color);
     position: sticky;
     top: 0;
     font-size: 21px;
+    z-index: 10;
 }
 
 nav ul{
@@ -47,7 +48,7 @@ nav form input{
     width: 100%;
     background-color: transparent;
     border-radius: 5px;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--primary-color);
     color: var(--primary-light-color);
     padding: 5px;
     font-size: 1rem;

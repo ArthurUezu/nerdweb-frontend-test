@@ -1,23 +1,38 @@
 :root{
-    --primary-color: #033244;
-    --secondary-color: #00AEEF;
+    --primary-color: #00AEEF;
+    --primary-color-rgb: 0,174,239;
+    --secondary-color: #033244;
+    --secondary-color-rgb: 3,50,68;
     --subtitle-color: #E2F7FF;
     --primary-light-color: #fff;
     --secondary-light-color: #2C3A2F;
     --primary-dark-color: #000;
+    --background-grey: #F3F3F3;
+    --text-grey: #676767;
 }
 
 @font-face {
     font-family: "Archer";
-    src: url("../fonts/ArcherBook/ArcherBook.otf");
+    src: url("../fonts/ArcherBook.otf");
     font-display: swap;
 }
 
+@font-face {
+    font-family: "Archer Bold";
+    src: url("../fonts/ArcherBold.otf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("../fonts/RobotoSlabBold.ttf");
+    font-display: swap;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: none;
     font-family: "Archer",sans-serif;
+    scrollbar-color: var(--secondary-color);
 }
 body{
     display: block;
@@ -27,21 +42,49 @@ ul{
     list-style: none;
 }
 
+h1,h2,h3,h4,h5,strong{
+    font-family: "Roboto Bold";
+    font-weight: bolder;
+    font-size: 32px;
+}
+
 a{
+    
     text-decoration: none;
     color: #000
+}
+
+strong{
+    color: var(--primary-color);
 }
 
 .icon{
     display: flex;
     align-self: center;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     border: none;
 }
 .button{
     border: none;
     background-color: transparent;
     padding: 0px 16px;
+}
+
+.primary-button{
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 19px;
+    font-weight: bolder;
+    padding: 9px 35px;
+    font-family: "Roboto Bold";
+    background-color: var(--primary-color);
+    color: var(--primary-dark-color);
+    border: none;
+    white-space: nowrap;
+}
+.primary-button:hover{
+    transition: all 0.2s ease-in;
+    background-color: rgba(var(--primary-color-rgb),0.7);
 }
 
 .dropdown {
@@ -57,7 +100,7 @@ a{
     left: 0;
     width: 0;
     transform: translateY(-2em);
-    z-index: 0;
+    z-index: 1;
     transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 }
 

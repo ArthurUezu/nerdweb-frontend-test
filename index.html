@@ -4,20 +4,20 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
         <script src="https://kit.fontawesome.com/349d46b761.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="assets/css/core.css">
         <link rel="stylesheet" href="assets/css/header.css">
         <link rel="stylesheet" href="assets/css/nav.css">
         <link rel="stylesheet" href="assets/css/index.css">
-
-
+        <link rel="stylesheet" href="assets/css/footer.css">
         <title>Nerdweb</title>
     </head>
     <body>
         <header>
             <ul>
                 <li>
-                    <a id="logo" href="#" ><img src="./assets/images/logo.png" alt=""></a>
+                    <a title="Nerdweb" id="logo" href="#" ><img src="./assets/images/logo.png" alt=""></a>
                 </li>
                 <li>
                     <div class="dropdown">
@@ -94,7 +94,7 @@
             </ul>
             <form id="search">
                 <input placeholder="Digite sua pesquisa" type="text" name="" id="">
-                <button class="icon">
+                <button type="submit" class="icon">
                     <i class="fas fa-search"></i>
                 </button>
             </form>
@@ -102,9 +102,160 @@
         <main>
             <section id="main-banner">
                 <a href="">
-                    <img src="./assets/images/banner.png" alt="">
+                    <h1>NERDWEB</h1>
+                    <img title="Nerdweb" src="./assets/images/banner.png" alt="">
                 </a>
             </section>
+            <section id="discover">
+                <div id="discover-text">
+                    <h2>Descubra os serviços Nerdweb <br><strong>que mais combinam com sua empresa</strong></h2>
+                    <a href="#" class="primary-button">VER SERVIÇOS</a>
+                </div>
+                <!-- <div id="discover-bracket">
+                    <img src="./assets/images/blue-bracket.png" alt="">
+                </div> -->
+                <div class="swiper swiperDiscover">
+                    <!-- Additional required wrapper -->
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="slide-card">
+                                <a href="">
+                                    <i class="fas fa-bullhorn"></i>
+                                </a>
+                                <h3>Serviço 2</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-card">
+                                <a href="">
+                                    <i class="fas fa-pastafarianism"></i>
+                                </a>
+                                <h3>Serviço</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-card">
+                                <a href="">
+                                    <i class="fas fa-bullseye"></i>
+                                </a>
+                                <h3>Serviço</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-card">
+                                <a href="">
+                                    <i class="fas fa-atom"></i>
+                                </a>
+                                <h3>Serviço</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-card">
+                                <a href="">
+                                    <i class="fas fa-crow"></i>
+                                </a>
+                                <h3>Serviço 2</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">    
+                            <div class="slide-card">
+                                <a href="">
+                                    <i class="fas fa-dice-d6"></i>
+                                </a>
+                                <h3>Serviço 2</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+            </section>
+            <section id="know">
+                <h2>Conheça todos <strong>produtos Nerdweb</strong></h2>
+                <div class="swiper swiperKnow">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="./assets/images/LAPTOP.png" alt="">
+                            </a>
+                            <h3>SITES</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="./assets/images/PHONE.png" alt="">
+                            </a>
+                            <h3>E-COMMERCE</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="./assets/images/SHOP.png" alt="">
+
+                            </a>
+                            <h3>REDES</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                <a class="primary-button" href="">VER TODOS PRODUTOS</a>
+            </section>
+            <section id="be-part">
+                
+            </section>
         </main>
+        <footer>
+
+        </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiperDiscover', {
+            slidesPerView: 2,
+            direction: 'horizontal',
+            loop: true,
+            freeMode: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                '720':{
+                    slidesPerView: 2
+                },
+                '950': {
+                    slidesPerView: 3
+                },
+                '520': {
+                    slidesPerView: 1
+                }
+            }
+        });
+        var swiper = new Swiper('.swiperKnow', {
+            slidesPerView: 5,
+            spaceBetween: 10,
+            direction: 'horizontal',
+            loop: true,
+            freeMode: true,
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true,
+            },
+            breakpoints: {
+                '720': {
+                    slidesPerView: 9
+                },
+                '520': {
+                    slidesPerView: 4
+                }
+            }
+        });
+    </script>
     </body>
 </html>
