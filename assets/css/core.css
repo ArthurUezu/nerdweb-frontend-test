@@ -75,7 +75,7 @@ strong{
     margin: 0 auto;
     font-size: 19px;
     font-weight: bolder;
-    padding: 9px 35px;
+    padding: 9px 20px;
     font-family: "Roboto Bold";
     background-color: var(--primary-color);
     color: var(--primary-dark-color);
@@ -94,6 +94,7 @@ strong{
 
 .dropdown-list {
     visibility: hidden;
+    display: none;
     opacity: 0;
     position: absolute;
     top: 100%;
@@ -124,7 +125,14 @@ strong{
 }
 
 @media (min-width:720px){
+    .dropdown-list{
+        display: flex;
+    }
     .dropdown-button{
         display: none;
+    }
+    .primary-button{
+        padding: 9px 35px;
+
     }
 }
