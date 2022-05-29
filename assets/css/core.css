@@ -1,6 +1,8 @@
 :root{
     --primary-color: #00AEEF;
+    --primary-color-rgb: 0,174,239;
     --secondary-color: #033244;
+    --secondary-color-rgb: 3,50,68;
     --subtitle-color: #E2F7FF;
     --primary-light-color: #fff;
     --secondary-light-color: #2C3A2F;
@@ -71,6 +73,10 @@ strong{
     background-color: var(--primary-color);
     color: var(--primary-dark-color);
     border: none;
+}
+.primary-button:hover{
+    transition: all 0.2s ease-in;
+    background-color: rgba(var(--primary-color-rgb),0.7);
 }
 
 .dropdown {

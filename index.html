@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="assets/css/header.css">
         <link rel="stylesheet" href="assets/css/nav.css">
         <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
         <title>Nerdweb</title>
     </head>
     <body>
@@ -108,46 +109,175 @@
             <section id="discover">
                 <div id="discover-text">
                     <h2>Descubra os serviços Nerdweb <br><strong>que mais combinam com sua empresa</strong></h2>
-                    <button class="primary-button">VER SERVIÇOS</button>
+                    <a href="#" class="primary-button">VER SERVIÇOS</a>
                 </div>
-                <div id="discover-bracket">
-                    
-                </div>
-                <div class="swiper">
+                <!-- <div id="discover-bracket">
+                    <img src="./assets/images/blue-bracket.png" alt="">
+                </div> -->
+                <div class="swiper swiperDiscover">
                     <!-- Additional required wrapper -->
                     <!-- If we need navigation buttons -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="slide-card">
+                                <a href="">
+                                    <i class="fas fa-bullhorn"></i>
+                                </a>
+                                <h3>Serviço 2</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-card">
+                                <a href="">
+                                    <i class="fas fa-pastafarianism"></i>
+                                </a>
+                                <h3>Serviço</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-card">
+                                <a href="">
+                                    <i class="fas fa-bullseye"></i>
+                                </a>
+                                <h3>Serviço</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-card">
+                                <a href="">
+                                    <i class="fas fa-atom"></i>
+                                </a>
+                                <h3>Serviço</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-card">
+                                <a href="">
+                                    <i class="fas fa-crow"></i>
+                                </a>
+                                <h3>Serviço 2</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">    
+                            <div class="slide-card">
+                                <a href="">
+                                    <i class="fas fa-dice-d6"></i>
+                                </a>
+                                <h3>Serviço 2</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
-                    <div class="swiper-wrapper">
-                      <!-- Slides -->
-                      <div class="swiper-slide">Slide 1</div>
-                      <div class="swiper-slide">Slide 2</div>
-                      <div class="swiper-slide">Slide 3</div>
-                      ...
-                    </div>
-                  
-                  
                   </div>
             </section>
-        </main>
+            <section id="know">
+                <h2>Conheça todos <strong>produtos Nerdweb</strong></h2>
+                <div class="swiper swiperKnow">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="">
 
+                            </a>
+                            <h3>Sites</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+
+                            </a>
+                            <h3>Sites</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+
+                            </a>
+                            <h3>Sites</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+
+                            </a>
+                            <h3>Sites</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+
+                            </a>
+                            <h3>Sites</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+
+                            </a>
+                            <h3>Sites</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+
+                            </a>
+                            <h3>Sites</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+
+                            </a>
+                            <h3>Sites</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+
+                </div>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper', {
-          // Optional parameters
-          direction: 'horizontal',
-          loop: true,
-      
-          // Navigation arrows
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-      
-          // And if we need scrollbar
-          scrollbar: {
-            el: '.swiper-scrollbar',
-          },
+        var swiper = new Swiper('.swiperDiscover', {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            direction: 'horizontal',
+            loop: true,
+            freeMode: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                '720': {
+                    slidesPerView: 3
+                },
+                '520': {
+                    slidesPerView: 1
+                }
+            }
+        });
+        var swiper = new Swiper('.swiperKnow', {
+            slidesPerView: 5,
+            spaceBetween: 10,
+            direction: 'horizontal',
+            loop: true,
+            freeMode: true,
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            breakpoints: {
+                '720': {
+                    slidesPerView: 9
+                },
+                '520': {
+                    slidesPerView: 4
+                }
+            }
         });
     </script>
     </body>
