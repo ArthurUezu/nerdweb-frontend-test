@@ -10,6 +10,7 @@ nav{
     position: sticky;
     top: 0;
     font-size: 21px;
+    z-index: 10;
 }
 
 nav ul{

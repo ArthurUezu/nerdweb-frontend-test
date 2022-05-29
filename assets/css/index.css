@@ -36,6 +36,7 @@ section#discover #discover-text{
 
 section#discover #discover-text h2{
     font-weight: bolder;
+    font-size: 32px;
     margin-bottom: 2rem;
 }
 .swiper{
@@ -46,7 +47,7 @@ section#discover .swiper-slide .slide-card{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin: 0 0.5rem;
+    margin: 0 0.5rem 0.5rem 0.5rem;
     padding: 2rem;
     box-shadow: 1px 3px 10px #00000014;
 }
@@ -62,6 +63,28 @@ section#know{
     margin-top: 4rem;
 }
 
+section#know .swiper{
+    height: 140px;
+    padding: 20px;
+    margin: 40px 0;
+    background-color: var(--background-grey);
+}
+section#know .swiper .swiper-slide{
+    width: 110px !important;
+    height: 112px !important;
+    margin-right: 20px !important;
+    padding: 10px 6px;
+    background: #E7E7E7 0% 0% no-repeat padding-box !important;
+    mix-blend-mode: multiply;
+}
+section#know .swiper .swiper-slide h3{
+    color: var(--text-grey);
+    padding: 0;
+    font-size: 0.8rem;
+}
+.swiper-scrollbar{
+    scrollbar-color: var(--secondary-color);
+}
 
 @media (min-width:720px){
     section#main-banner img{
@@ -78,8 +101,7 @@ section#know{
         flex-direction: row;
     }
     section#discover #discover-text h2{
-        width: 250px;
-        flex-basis: 300px;
+        width: 24vw;
     }
     section#know{
         width: 70%;

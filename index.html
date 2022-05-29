@@ -185,56 +185,30 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="">
-
+                                <img src="./assets/images/LAPTOP.png" alt="">
                             </a>
-                            <h3>Sites</h3>
+                            <h3>SITES</h3>
                         </div>
                         <div class="swiper-slide">
                             <a href="">
-
+                                <img src="./assets/images/PHONE.png" alt="">
                             </a>
-                            <h3>Sites</h3>
+                            <h3>E-COMMERCE</h3>
                         </div>
                         <div class="swiper-slide">
                             <a href="">
+                                <img src="./assets/images/SHOP.png" alt="">
 
                             </a>
-                            <h3>Sites</h3>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="">
-
-                            </a>
-                            <h3>Sites</h3>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="">
-
-                            </a>
-                            <h3>Sites</h3>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="">
-
-                            </a>
-                            <h3>Sites</h3>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="">
-
-                            </a>
-                            <h3>Sites</h3>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="">
-
-                            </a>
-                            <h3>Sites</h3>
+                            <h3>REDES</h3>
                         </div>
                     </div>
                     <div class="swiper-scrollbar"></div>
-
                 </div>
+                <a class="primary-button" href="">VER TODOS PRODUTOS</a>
+            </section>
+            <section id="be-part">
+                
             </section>
         </main>
         <footer>
@@ -244,7 +218,6 @@
     <script>
         var swiper = new Swiper('.swiperDiscover', {
             slidesPerView: 2,
-            spaceBetween: 10,
             direction: 'horizontal',
             loop: true,
             freeMode: true,
@@ -253,7 +226,10 @@
                 prevEl: '.swiper-button-prev',
             },
             breakpoints: {
-                '720': {
+                '720':{
+                    slidesPerView: 2
+                },
+                '950': {
                     slidesPerView: 3
                 },
                 '520': {
@@ -269,6 +245,7 @@
             freeMode: true,
             scrollbar: {
                 el: '.swiper-scrollbar',
+                draggable: true,
             },
             breakpoints: {
                 '720': {

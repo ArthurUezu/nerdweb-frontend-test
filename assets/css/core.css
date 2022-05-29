@@ -7,6 +7,8 @@
     --primary-light-color: #fff;
     --secondary-light-color: #2C3A2F;
     --primary-dark-color: #000;
+    --background-grey: #F3F3F3;
+    --text-grey: #676767;
 }
 
 @font-face {
@@ -30,6 +32,7 @@
     padding: 0;
     box-sizing: none;
     font-family: "Archer",sans-serif;
+    scrollbar-color: var(--secondary-color);
 }
 body{
     display: block;
@@ -42,9 +45,11 @@ ul{
 h1,h2,h3,h4,h5,strong{
     font-family: "Roboto Bold";
     font-weight: bolder;
+    font-size: 32px;
 }
 
 a{
+    
     text-decoration: none;
     color: #000
 }
@@ -66,13 +71,16 @@ strong{
 }
 
 .primary-button{
+    display: inline-block;
     margin: 0 auto;
-    font-size: 0.7rem;
+    font-size: 19px;
     font-weight: bolder;
-    padding: 0.35rem 1.5rem;
+    padding: 9px 35px;
+    font-family: "Roboto Bold";
     background-color: var(--primary-color);
     color: var(--primary-dark-color);
     border: none;
+    white-space: nowrap;
 }
 .primary-button:hover{
     transition: all 0.2s ease-in;
