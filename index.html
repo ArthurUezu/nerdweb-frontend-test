@@ -111,10 +111,12 @@
                     <h2>Descubra os serviços Nerdweb <br><strong>que mais combinam com sua empresa</strong></h2>
                     <a href="#" class="primary-button">VER SERVIÇOS</a>
                 </div>
-                <!-- <div id="discover-bracket">
-                    <img src="./assets/images/blue-bracket.png" alt="">
-                </div> -->
                 <div class="swiper swiperDiscover">
+                    <div>
+                        <button class="button prev"><i class="fas fa-angle-left"></i></button>
+                        <button class="button next"><i class="fas fa-angle-right"></i></button>
+    
+                    </div>
                     <!-- Additional required wrapper -->
                     <!-- If we need navigation buttons -->
                     <div class="swiper-wrapper">
@@ -175,9 +177,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-prev"></div>
+                    <!-- <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
-                  </div>
+                  </div> -->
             </section>
             <section id="know">
                 <h2>Conheça todos <strong>produtos Nerdweb</strong></h2>
@@ -374,8 +376,8 @@
             loop: true,
             freeMode: true,
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.next',
+                prevEl: '.prev',
             },
             breakpoints: {
                 '720':{

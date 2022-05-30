@@ -40,7 +40,11 @@ section#discover #discover-text h2{
     margin-bottom: 2rem;
 }
 .swiper{
-    width: 100%;
+    width: 90%;
+}
+.swiper button{
+    background-color: var(--background-grey);
+    margin:0 10px 10px 10px;
 }
 section#discover .swiper-slide .slide-card{
     display: flex;
@@ -132,6 +136,7 @@ section#services #services-container .service-card{
     width: 100%;
     background-color: var(--secondary-color);
     margin-bottom: 10px;
+    position: relative;
 }
 section#services #services-container .service-card img{
     max-height: 212px;
@@ -139,7 +144,7 @@ section#services #services-container .service-card img{
     object-fit: cover;
 }
 section#services #services-container .service-text{
-    padding: 24px 24px 0 24px;
+    padding: 24px 24px 70px 24px;
     color: var(--primary-light-color);
     text-align: left;
 }
@@ -152,6 +157,8 @@ section#services #services-container .service-text p{
 }
 section#services #services-container a{
     margin: 24px 24px;
+    position: absolute;
+    bottom: 6px;
     text-align: left;
     font-family: "Roboto Bold";
     color: var(--primary-color);
