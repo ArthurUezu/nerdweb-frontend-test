@@ -25,7 +25,6 @@ nav ul a, nav ul button{
 nav .dropdown-list li a {
     color: var(--primary-dark-color);
 }
-
 nav form{
     display: flex;
     flex-direction: row;
@@ -54,6 +53,9 @@ nav form input{
     font-size: 1rem;
 }
 
+.nav.dropdown-list li a{
+    font-size: 1rem;
+}
 @media (min-width:720px){
     .nav.dropdown-list{
         width: 100%;
@@ -84,6 +86,9 @@ nav form input{
         opacity: 1;
         z-index: 1;
     }
+    .nav.dropdown-list li a{
+        font-size: 0.78rem;
+    }
     .nav.dropdown-list li{
         display: flex;
         padding-right: 1rem;
@@ -94,9 +99,6 @@ nav form input{
     .nav.dropdown-list li{
         display: flex;
         padding-right: 0.7rem;
-    }
-    .nav.dropdown-list li a{
-        font-size: 0.78rem;
     }
     .nav.dropdown-list{
         padding: 0;
