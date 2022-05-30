@@ -1,6 +1,100 @@
 footer{
+    display: flex;
+    flex-direction: column;
     border-top: 3px solid var(--primary-color);
     width: 100%;
     background-color: var(--secondary-color);
     padding: 7%;
+    width: 86%;
+    margin-top: 70px;
 }
+footer #infos{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+footer #infos img{
+    height: 34px;
+    width: 88px;
+}
+
+footer #infos h3{
+    color: var(--primary-light-color);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+footer #infos li{
+    margin-bottom: 20px;
+}
+footer #infos a{
+    color: var(--primary-color);
+}
+footer #infos p{
+    color: #B2EAFF;
+}
+footer #network{
+    display: flex;
+    flex-direction: column;
+    border-top: 3px solid var(--primary-light-color);
+    padding-top: 20px;
+}
+footer #network p{
+    color: var(--primary-light-color);
+}
+footer #network h3, footer #network i{
+    color: #71D8FF;
+}
+footer #network h3{
+    font-size: 20px;
+}
+footer #network i{
+    font-size: 30px;
+}
+footer #network ul{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+@media (min-width:769px) and (max-width:1079px){
+    footer #infos{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer #infos>ul{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+    footer #infos>ul>li{
+        margin-left: 20px;
+    }
+    footer #network{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+}
+    @media (min-width:1080px){
+        
+        footer #infos{
+            flex-direction: row !important  ;
+            justify-content: space-between;
+        }
+        footer #infos>ul{
+            display: flex;
+            flex-direction: row;
+            width: 70%;
+            justify-content: space-around;
+        }
+        footer #infos>ul>li{
+            margin-left: 20px;
+        }
+        footer #network{
+            flex-direction: row;
+            justify-content: space-between;
+    
+        }
+        
+        }
